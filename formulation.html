@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url(/leon.jpeg);
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           max-width: 400px;
+           padding: 5px;
+           text-align: center;
+        }
+        header{
+            background-color: beige;
+            max-width: 400px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            padding: 18px;
+            position: absolute;
+        }
+    </style>
+    <div>
+    <header>
+        <nav>
+    <form action="/index_Home.html"><h1><u style="color: blueviolet;">Formulation de reservation</legend></u></u></h1>
+
+    <label for="LNELP">Le Nom Et Le Prenom :</label></fieldset>
+    <input type="text" placeholder="Ecrit..."><br><br>
+
+    <label for="email">Email De L'utilisateur :</label>
+    <input type="email" placeholder="*******@**.com"><br><br>
+
+    <label for="Date">La Date De Reservation :</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="LNDP">Le Nombre De place : </label>
+    <input type="number" id="number" name="number" value="1" required><br><br>
+
+</nav>
+<main>
+
+    <p>Type De Reservation :</p>
+
+     <section>
+        <article><input type="radio" name="Particulier" id="Particulier" >Particulier</li></article>
+        <article><input type="radio" name="Proffesionel" id="Proffesionel" >Proffesionel</li></article>
+    </section>
+ <p>Categorie De L'evenement :</p>
+   <select name="Categorie De L'evenement" id="Categorie De L'evenement">
+   <option value="Concert">Concert</option><br>
+   <option value="Conference">Conference</option><br>
+   <option value="Atelier">Atelier</option><br>
+</select><br><br>
+  <p>Services supplementaires :</p>
+  <section>
+    <article><input type="checkbox" name="Repas" id="Repas">Repas</li></article>
+   <article><input type="checkbox" name="Parking" id="Parking">Parking</li></article> 
+    <article><input type="checkbox" name="WI-FI" id="WI-FI">WI-FI</li><br></article>
+  </section>  
+   <button>soumission</button><br><br>
+
+</body>
+</html>
+</form></main></header></div>

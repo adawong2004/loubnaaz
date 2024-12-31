@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de reservation</title>
+</head>
+<body>
+    <style>body  {text-align: center;
+        background-color: beige;        padding: 110px  
+}
+h1 label input li p select option {
+            text-align: center;
+
+
+}
+    </style> 
+     <li>   
+    <h1><u style="color: blueviolet;">Formulaire de reservation:</u></u></h1>
+    <form action="/index_Home.html"></form>
+    <label for="NDL">Nom De L'utilisateur :</label>
+    <input type="text" placeholder><br><br>
+    <label for="Email">L'adress Email:</label>
+     <input type="email" placeholder="*******@.com"><br><br>
+     <label for="DR">La Date De Reservation :</label>
+     <input type="date"><br><br>
+     <label for="hdl">L'Heure De L'evenement :</label>
+     <input type="time"><br><br>
+     <label for="NDP">Le Nombre De Places :</label>
+     <input type="number"><br><br><br>
+     </li> <br><br>
+     <label for="Genre">Le Type De reservation :</label><br><br>
+     <li><input type="radio" name="Homme"required>Particulier</li><br>
+     <li><input type="radio" required>Professionel</li> 
+     <p>liste Deroulante :</p>
+     <select name="LD" id="LD">
+        <option value="concert">Concert</option>
+        <option value="conference">Conference</option>
+        <option value="atelier">Atelier</option>
+     </select><br><br>
+     <label for="services supplementaires">services supplementaires :</label><br><br>
+        <li><input type="checkbox">Repas</li><br>
+        <li><input type="checkbox">Parking</li><br>
+        <li><input type="checkbox">WI-FI</li><br>
+</body>

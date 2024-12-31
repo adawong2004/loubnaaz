@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site E-Learning</title>
+</head>
+<body>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(110, 117, 180);
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    width: 30%;
+    text-align: center;
+    border: 1px solid rgb(110, 117, 180);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(212, 215, 238);
+}
+
+article h2 {
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+}
+
+article h2::first-letter {
+    font-size: 2.2em;
+}
+
+article a {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+article:hover {
+    background-color: rgb(212, 215, 238);
+    cursor: pointer;
+}
+
+.connexion {
+    width: 25%;
+    border: 1px solid rgb(110, 117, 180);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(212, 215, 238);
+    margin-top: 10px;
+}
+
+.connexion h3 {
+    text-align: center;
+}
+
+.connexion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connexion form label, .connexion form input, .connexion form button, .connexion form p {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.connexion form button {
+    background-color: rgb(110, 117, 180);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main {
+    padding: 18px;
+}
+@media (max-width: 450px) {
+    .articles, .connexion {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    article p, article a {
+        display: none;
+    }
+}
+    </style>
+    <header>
+        <h1>Site E-Learning</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#">Tutoriels</a></li>
+                <li><a href="#">Références</a></li>
+                <li><a href="#">Exercices</a></li>
+                <li><a href="#">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles">
+            <article>
+                <h2>HTML</h2>
+                <p>Langage pour la création des pages web</p>
+                <a href="#">Tutoriels</a>
+                <a href="#">Exercices</a>
+                <a href="#">Quiz</a>
+            </article>
+            <article>
+                <h2>CSS</h2>
+                <p>Langage pour le style des pages Web</p>
+                <a href="#">Tutoriels</a>
+                <a href="#">Exercices</a>
+                <a href="#">Quiz</a>
+            </article>
+            <article>
+                <h2>JAVASCRIPT</h2>
+                <p>Langage de programmation des pages Web</p>
+                <a href="#">Tutoriels</a>
+                <a href="#">Exercices</a>
+                <a href="#">Quiz</a>
+            </article>
+        </section>
+        <aside class="connexion">
+            <h3>Connexion</h3>
+            <form>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Connexion</button>
+                <p><a href="#">Besoin d’un compte ? S’inscrire</a></p>
+                <p><a href="#">Mot de passe oublié</a></p>
+            </form>
+        </aside>
+    </main>
+</body>
+</html>
